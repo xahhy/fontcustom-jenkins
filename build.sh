@@ -1,1 +1,1 @@
-tar czf svgs.tar **/*.svg
+tar czf svgs.tar travel/svg
