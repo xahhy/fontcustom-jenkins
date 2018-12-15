@@ -4,7 +4,8 @@ pipeline {
     stage('build font') {
       steps {
         sh 'echo "use fontcustom to build font from svgs"'
-        sh 'tar czf svgs.tar **/*.svg'
+        sh '''pwd
+tar czf svgs.tar **/*.svg'''
       }
     }
     stage('Archive') {
