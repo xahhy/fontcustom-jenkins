@@ -4,7 +4,8 @@ pipeline {
     stage('build font') {
       steps {
         sh 'echo "use fontcustom to build font from svgs"'
-        sh 'build.sh'
+        sh 'echo ls -al'
+        sh './build.sh'
       }
     }
     stage('Archive') {
